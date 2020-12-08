@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-def print_last_digit(number):
+for i in range(ord('a'), ord('z') + 1):
+    print('{:c}'.format(i), end='')
