@@ -18,7 +18,6 @@ def main():
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         quit(1)
-				
 
 
 if __name__ == "__main__":
