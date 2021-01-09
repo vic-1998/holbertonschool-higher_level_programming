@@ -141,3 +141,4 @@ Checking for newline at end:
 	 Hello, how are you?
 	 <BLANKLINE>
 	 <BLANKLINE>
+	 

@@ -83,3 +83,4 @@ Checking for non-int number types:
 	 Traceback (most recent call last):
          ...
          TypeError: size must be an integer
+		 
