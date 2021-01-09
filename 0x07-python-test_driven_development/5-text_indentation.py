@@ -5,9 +5,7 @@ This is the "5-test_indentation" module.
 
 
 def text_indentation(text):
-    """
-    Function that prints a text with 2 new lines after each of these characters.
-    """
+    """Function that prints a text with 2 lines """
     if type(text) is not str:
         raise TypeError("text must be a string")
     flag = 0
