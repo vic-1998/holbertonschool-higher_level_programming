@@ -27,10 +27,6 @@ Checking for passing None as last name:
          ...
          TypeError: last_name must be a string
 
-Checking for 1 arg:
-	>>> say_my_name("Bob")
-	My name is Bob
-
 Checking for wrong type as last name:
          >>> say_my_name("Hello", [4])
          Traceback (most recent call last):
