@@ -15,53 +15,6 @@ Checking function docstring:
 	>>> len(l) > 1
 	True
 
-Checking passing None as matriz:
-	>>> matrix_divided(None, 1)
-	Traceback (most recent call last):
-		 ...
-		 TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-Checking passing None as matrix:
-	 >>> matrix_divided(None, 1)
-	 Traceback (most recent call last):
-         ...
-         TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-Checking uneven matrix:
-	>>> matrix = [[1, 2, 3], [4, 5, 6]]
-	>>> matrix_divided(matrix, 3)
-	Traceback (most recent call last)
-		 ...
-		 TypeError: Each row of the matrix must have the same size
-
-Checking div as no-number:
-	>>> matrix = [[1, 2, 3], [4, 5, 6]]
-	>>> matrix_divided(matrix, "H")
-	Traceback (most recent call last)
-		 ...
-		 TypeError: div must be a number
-
-Checking passing None as div:
-	>>> matrix = [[1, 2, 3], [4, 5, 6]]
-	>>> matrix_divided(matrix, None)
-	Traceback (most recent call last)
-		 ...
-		 TypeError: div must be a number
-
-Checking list of mixed list and non-list items:
-	>>> matrix = [[1, 2, 3], ["World"]]
-	>>> matrix_divided(matrix, 1)
-	Traceback (most recent call last)
-		 ...
-		 TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-Checking matrix as list:
-	>>> matrix = "Hello"
-	>>> matrix_divided(matrix, 1)
-	Traceback (most recent call last)
-		 ...
-		 TypeError: matrix must be a matrix (list of lists) of integers/floats
-		 
 Checking empty matrix:
 	 >>> matrix = []
 	 >>> matrix_divided(matrix, 1)
@@ -69,20 +22,11 @@ Checking empty matrix:
 	 >>> matrix
 	 []
 	 
-Checking for division by infinity:
-	 >>> matrix_divided(matrix, float('inf'))
-	 [[0.0], [0.0], [0.0]]
 
 Checking for division with infinity in numerator:
 	 >>> matrix = [[1, float('inf'), 3], [4, 5, 6]]
 	 >>> matrix_divided(matrix, 1)
          [[1.0, inf, 3.0], [4.0, 5.0, 6.0]]
-
-Checking division by zero:
-	>>> matrix_divided(matrix, 0)
-	Traceback (most recent call last)
-	 ...
-	 ZeroDivisionError: division by zero
 
 Checking for regular division:
 	 >>> matrix = [[1, 2, 3], [4, 5, 6]]
