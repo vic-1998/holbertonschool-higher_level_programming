@@ -9,8 +9,12 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initializes the rectangle"""
-        self.height = height
         self.width = width
+        self.height = height
+
+    def __del__(self):
+        """prints a string when an instance has been deleted"""
+        print("Bye rectangle...")
 
     @property
     def width(self):
