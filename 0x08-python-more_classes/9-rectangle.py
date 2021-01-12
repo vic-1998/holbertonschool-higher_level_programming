@@ -12,7 +12,7 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """returns Rectangle"""
+        """return Rectangle"""
         return cls(size, size)
 
     @staticmethod
