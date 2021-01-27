@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-
 """
 Base modular tests
 """
 
-from models.base import Base
 import unittest
 import pycodestyle
 import inspect
 import pep8
 import json
+from models import base
+Base = base.Base
 
 
 class BaseTest(unittest.TestCase):
