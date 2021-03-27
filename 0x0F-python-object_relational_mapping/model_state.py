@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-
+Class definition of a State
 """
 
 import sqlalchemy
