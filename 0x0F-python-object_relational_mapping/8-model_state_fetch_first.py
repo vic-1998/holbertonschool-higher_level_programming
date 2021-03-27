@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-
+Script that prints the first State object from the database hbtn_0e_6_usa
 """
 
 import sqlalchemy
@@ -16,9 +16,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(db)
     Session = sessionmaker(bind=db)
     session = Session()
-    first_state = session.query(State).order_by(State.id).first()
-    if first_state is not None:
-        print("{}: {}".format(first_state.id, first_state.name))
+    query = session.query(State).order_by(State.id).first()
+    if query is not None:
+        print("{}: {}".format(query.id, query.name))
     else:
         print("Nothing")
     session.close()
