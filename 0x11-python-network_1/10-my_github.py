@@ -2,13 +2,13 @@
 """
 Python script that takes your GitHub
 """
-
+from sys import argv
+import requests
 
 if __name__ == '__main__':
-    """My GitHub"""
-    import requests
-    from requests.auth import HTTPBasicAuth
-    from sys import argv
-    r = requests.get('https://api.github.com/users/{}'.format(argv[1]),
-                     auth=HTTPBasicAuth(argv[1], argv[2]))
-    print(r.json().get('id'))
+    url = 'https://api.github.com/user'
+    data = requests.get(url, auth=(argv[1], argv[2])).json()
+    try:
+        print(data['id'])
+    except:
+        print("None")
