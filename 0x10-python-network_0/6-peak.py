@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-"""You are not allowed to google anything"""
+"""Find a peak"""
 
 
-def find_peak(txtst_of_integers):
-    """function that finds a peak"""
-    txt = txtst_of_integers
-    l = len(txt)
+def find_peak(list_of_integers):
+    """Write a function that finds a peak"""
+    x = list_of_integers
+    l = len(x)
     if l == 0:
         return
     m = l // 2
-    if (m == l - 1 or txt[m] >= txt[m + 1]) and (m == 0 or txt[m] >= txt[m - 1]):
-        return txt[m]
-    if m != l - 1 and txt[m + 1] > txt[m]:
-        return find_peak(txt[m + 1:])
-    return find_peak(txt[:m])
+    if (m == l - 1 or x[m] >= x[m + 1]) and (m == 0 or x[m] >= x[m - 1]):
+        return x[m]
+    if m != l - 1 and x[m + 1] > x[m]:
+        return find_peak(x[m + 1:])
+    return find_peak(x[:m])
