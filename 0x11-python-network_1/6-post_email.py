@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that takes in a URL 
+Script that takes in a URL
 """
 
 if __name__ == '__main__':
