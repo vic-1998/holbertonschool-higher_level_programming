@@ -4,6 +4,7 @@ Script that takes in a URL
 """
 
 if __name__ == '__main__':
+    """POST an email"""
     import requests
     from sys import argv
     payload = {'email': argv[2]}
