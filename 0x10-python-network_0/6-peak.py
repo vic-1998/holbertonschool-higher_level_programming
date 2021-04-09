@@ -3,7 +3,7 @@
 
 
 def find_peak(txtst_of_integers):
-    """function that finds a peak in a list of unsorted integers."""
+    """function that finds a peak"""
     txt = txtst_of_integers
     l = len(txt)
     if l == 0:
