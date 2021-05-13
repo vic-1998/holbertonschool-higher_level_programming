@@ -1,1 +1,1 @@
-#!/usr/bin/node
+$.get('https://fourtonfish.com/hellosalut/?lang=fr', (data) => $('hello').text(data.hello));
